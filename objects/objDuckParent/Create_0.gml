@@ -17,8 +17,8 @@ enum STATE {
 healthPoints = 10;
 
 velocity = {
-	x: 0,
-	y: 0
+	xVel: 0,
+	yVel: 0
 };
 
 inputs = {
@@ -30,11 +30,13 @@ inputs = {
 
 state = STATE.IDLE;
 
-collisionList = [];
+collisionList = [objCollision];
 
 invencible = false;
 invencible_time = FPS * 0.2;
 invencible_timer = invencible_time;
+
+dir = 1;
 
 #endregion
 
@@ -48,30 +50,30 @@ updateInputs = function() {
 };
 
 updateVelocity = function() {
-	velocity.x = (inputs.right - inputs.left) * MAX_VEL;
-	velocity.y = (inputs.down - inputs.up) * MAX_VEL;
+	velocity.xVel = (inputs.right - inputs.left) * MAX_VEL;
+	velocity.yVel = (inputs.down - inputs.up) * MAX_VEL;
 };
 
 updateCollisions = function() {
 	// Checking Collisions
-	var _colX = instance_place(x + velocity.x, y, collisionList);
-	var _colY = instance_place(x, y + velocity.y, collisionList);
+	var _colX = instance_place(x + velocity.xVel, y, collisionList);
+	var _colY = instance_place(x, y + velocity.yVel, collisionList);
 	
 	// HORIZONTAL COLLISION
 	if (_colX) {
 		
 		// RIGHT
-		if (velocity.x > 0) {
-			x = _colX.bbox_left - (bbox_right - bbox_left);
+		if (velocity.xVel > 0) {
+			x = _colX.bbox_left - (bbox_right - x);
 		}
 		
 		// LEFT
-		if (velocity.x < 0) {
-			x = _colX.bbox_right;
+		if (velocity.xVel < 0) {
+			x = _colX.bbox_right + (x - bbox_left);
 		}
 		
 		// We need to reset the velocity
-		velocity.x = 0;
+		velocity.xVel = 0;
 
 	}
 	
@@ -79,24 +81,24 @@ updateCollisions = function() {
 	if (_colY) {
 	
 		// DOWN
-		if (velocity.y > 0) {
-			y = _colY.bbox_top - (bbox_bottom - bbox_top);
+		if (velocity.yVel > 0) {
+			y = _colY.bbox_top - (bbox_bottom - y);
 		}
 		
 		// UP
-		if (velocity.y < 0) {
-			y = _colY.bbox_bottom;
+		if (velocity.yVel < 0) {
+			y = _colY.bbox_bottom + (y - bbox_top);
 		}
 		
 		// We need to reset the velocity
-		velocity.y = 0;
+		velocity.yVel = 0;
 		
 	}
 };
 
 updatePosition = function() {
-	x += velocity.x;
-	y += velocity.y;
+	x += velocity.xVel;
+	y += velocity.yVel;
 };
 
 updateState = function() {};
@@ -121,9 +123,18 @@ takeDamage = function(_damage) {
 };
 
 updateSprite = function() {
-	if (velocity.x != 0) {
-		image_xscale = sign(velocity.x);
+	if (velocity.xVel != 0) {
+		image_xscale = sign(velocity.xVel)
+		// If changed, we invert the xscale
+		if (dir != image_xscale) {
+			xscale *= -1;
+		}
+		dir = image_xscale;
 	}
+};
+
+updateDepth = function() {
+	depth = -y;
 };
 
 #endregion
@@ -131,5 +142,5 @@ updateSprite = function() {
 #region Initializing dependencies
 
 initCoilEffect(0.1);
-
+depth = -y;
 #endregion

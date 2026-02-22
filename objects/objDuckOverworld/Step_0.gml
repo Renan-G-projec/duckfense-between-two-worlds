@@ -8,5 +8,7 @@ updateCollisions();
 updatePosition();
 updateSprite();
 
+updateDepth();
+
 updateTimers();
-updateCoilEffect();
+updateCoilEffect(dir);
