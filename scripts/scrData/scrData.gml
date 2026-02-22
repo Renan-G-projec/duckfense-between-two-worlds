@@ -17,6 +17,6 @@ global.currentDimension = DIMENSIONS.OVERWORLD;
 global.transparency = 0.3;
 
 // Camera transition velocity
-global.cameraVel = 0.2;
+global.cameraVel = 0.1;
 
 #endregion
