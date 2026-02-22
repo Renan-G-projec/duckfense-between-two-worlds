@@ -8,10 +8,13 @@
   "name":"objDuckParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objEntityParent",
+    "path":"objects/objEntityParent/objEntityParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -10,3 +10,13 @@ enum DIMENSIONS {
 global.currentDimension = DIMENSIONS.OVERWORLD;
 
 #endregion
+
+#region Configurations 
+
+// Transparency of the other world in game
+global.transparency = 0.3;
+
+// Camera transition velocity
+global.cameraVel = 0.2;
+
+#endregion

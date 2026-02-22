@@ -1,21 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"objDuckGrayworld",
+  "%Name":"objEntityParent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objDuckGrayworld",
+  "name":"objEntityParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"objDuckParent",
-    "path":"objects/objDuckParent/objDuckParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprDuckGrayworld",
-    "path":"sprites/sprDuckGrayworld/sprDuckGrayworld.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

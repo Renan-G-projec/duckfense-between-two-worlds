@@ -1,4 +1,5 @@
 // Ad Maiorem Dei Gloriam!
+event_inherited();
 
 #region Macros and Enums
 
@@ -99,7 +100,7 @@ updateState = function() {};
 updateSprite = function() {
 	if (velocity.x != 0) {
 		image_xscale = sign(velocity.x);
-	};
+	}
 };
 
 #endregion
