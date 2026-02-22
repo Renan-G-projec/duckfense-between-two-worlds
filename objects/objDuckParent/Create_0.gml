@@ -32,6 +32,10 @@ state = STATE.IDLE;
 
 collisionList = [];
 
+invencible = false;
+invencible_time = FPS * 0.2;
+invencible_timer = invencible_time;
+
 #endregion
 
 #region Methods
@@ -96,6 +100,25 @@ updatePosition = function() {
 };
 
 updateState = function() {};
+
+updateTimers = function() {
+	// Damage Timer
+	if (invencible) {
+		if (invencible_timer <= 0) {
+			invencible_timer = invencible_time;
+			invencible = false;
+		} else {
+			invencible_timer--;
+		}
+	}
+};
+
+takeDamage = function(_damage) {
+	if (invencible) return;
+	healthPoints -= _damage;
+	
+	invencible = true;
+};
 
 updateSprite = function() {
 	if (velocity.x != 0) {

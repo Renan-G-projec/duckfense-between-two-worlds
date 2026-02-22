@@ -1,3 +1,2 @@
 // Ad Maiorem Dei Gloriam!
-
-drawCoilEffect();
+event_inherited();

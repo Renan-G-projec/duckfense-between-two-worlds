@@ -1,5 +1,11 @@
 // Ad Maiorem Dei Gloriam!
 
+#region Geting Game Info
+
+#macro FPS game_get_speed(gamespeed_fps)
+
+#endregion
+
 #region Dimensions
 
 enum DIMENSIONS {
