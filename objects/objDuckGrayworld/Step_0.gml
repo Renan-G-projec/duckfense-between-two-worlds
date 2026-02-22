@@ -6,3 +6,5 @@ updateInputs();
 updateVelocity();
 updateCollisions();
 updatePosition();
+
+updateCoilEffect()

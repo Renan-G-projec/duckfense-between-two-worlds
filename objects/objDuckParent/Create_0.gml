@@ -104,3 +104,9 @@ updateSprite = function() {
 };
 
 #endregion
+
+#region Initializing dependencies
+
+initCoilEffect(0.1);
+
+#endregion

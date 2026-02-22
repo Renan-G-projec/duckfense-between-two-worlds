@@ -7,3 +7,5 @@ updateVelocity();
 updateCollisions();
 updatePosition();
 updateSprite();
+
+updateCoilEffect();

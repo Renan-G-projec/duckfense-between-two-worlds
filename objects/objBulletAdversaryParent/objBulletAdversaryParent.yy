@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objDuckOverworld",
+  "%Name":"objBulletAdversaryParent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objDuckParent","path":"objects/objDuckParent/objDuckParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objDuckOverworld",
+  "name":"objBulletAdversaryParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Bullets",
+    "path":"folders/Objects/Bullets.yy",
   },
-  "parentObjectId":{
-    "name":"objDuckParent",
-    "path":"objects/objDuckParent/objDuckParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprDuckOverworld",
-    "path":"sprites/sprDuckOverworld/sprDuckOverworld.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
