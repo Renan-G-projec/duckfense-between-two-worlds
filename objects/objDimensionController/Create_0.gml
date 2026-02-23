@@ -30,14 +30,6 @@ focusDimension = function(_dimension) {
 	}
 };
 
-getPlayerDimension = function(_dimension) {
-	with (objDuckParent) {
-		if (dimension == _dimension) {
-			return self;
-		}
-	}
-};
-
 #endregion
 
 #region Initial Config

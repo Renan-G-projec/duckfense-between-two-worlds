@@ -1,6 +1,8 @@
 // Ad Maiorem Dei Gloriam!
 
-activateCoilEffect(other, playerCoilX, playerCoilY);
-other.takeDamage(1);
+if (other.dimension != dimension) exit;
+
+activateCoilEffect(other, playerCoilX * other.dir, playerCoilY);
+other.takeDamage(damage);
 
 instance_destroy();
