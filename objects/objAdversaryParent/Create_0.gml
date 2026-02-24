@@ -3,6 +3,8 @@ event_inherited();
 
 #region Variables
 
+velocity = 0;
+
 healthPoints = 1;
 damageDistX = 1.4;
 damageDistY = 0.7;
@@ -20,6 +22,15 @@ playerRef = getPlayerDimension(dimension);
 #endregion
 
 #region Methods
+
+updatePosition = function() {
+	var _dx = lengthdir_x(velocity, direction);
+	var _dy = lengthdir_y(velocity, direction);
+	
+	// Separating axis for better precision
+	move_and_collide(_dx, 0, collisionList, 14);
+	move_and_collide(0, _dy, collisionList, 14);
+};
 
 pointToPlayer = function() {
 	direction = point_direction(x, y, playerRef.x, playerRef.y);

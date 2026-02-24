@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"objBulletAdversaryParent",
+  "%Name":"objBulletPlayerParent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objDuckParent","path":"objects/objDuckParent/objDuckParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objBulletAdversaryParent",
+  "name":"objBulletPlayerParent",
   "overriddenProperties":[],
   "parent":{
     "name":"Bullets",

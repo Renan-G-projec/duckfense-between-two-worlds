@@ -1,6 +1,7 @@
 // Ad Maiorem Dei Gloriam!
 
 pointToPlayer();
+updatePosition();
 updateDamageTimer();
 updateSpriteDirection();
 
