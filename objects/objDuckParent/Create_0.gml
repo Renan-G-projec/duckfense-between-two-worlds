@@ -101,7 +101,13 @@ updatePosition = function() {
 	y += velocity.yVel;
 };
 
-updateState = function() {};
+updateState = function() {
+	if (velocity.xVel != 0 || velocity.yVel != 0) {
+		state = STATE.RUN;
+	} else {
+		state = STATE.IDLE;
+	}
+};
 
 updateTimers = function() {
 	// Damage Timer
@@ -122,7 +128,7 @@ takeDamage = function(_damage) {
 	invencible = true;
 };
 
-updateSprite = function() {
+updateSpriteDir = function() {
 	if (velocity.xVel != 0) {
 		image_xscale = sign(velocity.xVel)
 		// If changed, we invert the xscale
@@ -130,6 +136,22 @@ updateSprite = function() {
 			xscale *= -1;
 		}
 		dir = image_xscale;
+	}
+};
+
+updateSpriteIndex = function() {
+	switch (state) {
+		case STATE.IDLE:
+			if (sprite_index != sprPlayerIdle) sprite_index = sprPlayerIdle;
+			break;
+		case STATE.RUN:
+			if (sprite_index != sprPlayerRun) {
+				sprite_index = sprPlayerRun;
+				image_index = 0;
+			};
+			break;
+		default:
+			break;
 	}
 };
 

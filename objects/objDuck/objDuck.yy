@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprDuckOverworld",
-    "path":"sprites/sprDuckOverworld/sprDuckOverworld.yy",
+    "name":"sprPlayerIdle",
+    "path":"sprites/sprPlayerIdle/sprPlayerIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

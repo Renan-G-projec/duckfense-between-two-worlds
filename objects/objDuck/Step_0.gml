@@ -3,6 +3,8 @@
 
 if (global.currentDimension != dimension) {
 	updateTimers();
+	state = STATE.IDLE;
+	updateSpriteIndex();
 	updateCoilEffect(dir);
 	exit;
 }
@@ -11,7 +13,9 @@ updateInputs();
 updateVelocity();
 updateCollisions();
 updatePosition();
-updateSprite();
+updateState();
+updateSpriteDir();
+updateSpriteIndex();
 
 updateDepth();
 updateTimers();
