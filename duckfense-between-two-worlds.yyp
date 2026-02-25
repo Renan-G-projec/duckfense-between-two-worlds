@@ -38,6 +38,7 @@
   "resources":[
     {"id":{"name":"objAdversaryParent","path":"objects/objAdversaryParent/objAdversaryParent.yy",},},
     {"id":{"name":"objBulletAdversaryParent","path":"objects/objBulletAdversaryParent/objBulletAdversaryParent.yy",},},
+    {"id":{"name":"objBulletParent","path":"objects/objBulletParent/objBulletParent.yy",},},
     {"id":{"name":"objBulletPlayerParent","path":"objects/objBulletPlayerParent/objBulletPlayerParent.yy",},},
     {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
