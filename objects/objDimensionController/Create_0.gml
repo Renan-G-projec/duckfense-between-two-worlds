@@ -18,7 +18,16 @@ updateDimension = function() {
 
 toggleDimension = function(_dimension) {
 	global.currentDimension = getOtherDimension(_dimension);
+	toggleGrayFilter();
 }
+
+toggleGrayFilter = function() {
+	if (shader_current() != shGrayscale) {
+		shader_set(shGrayscale);
+	} else {
+		shader_set(shNormal);
+	}
+};
 
 focusDimension = function(_dimension) {
 	with (objEntityParent) {

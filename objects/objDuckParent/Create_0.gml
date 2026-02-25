@@ -137,6 +137,13 @@ updateDepth = function() {
 	depth = -y;
 };
 
+applyFilter = function(_drawFn, _filter) {
+	var _prevShader = shader_current();
+	shader_set(_filter);
+	_drawFn();
+	shader_set(_prevShader);
+};
+
 #endregion
 
 #region Initializing dependencies

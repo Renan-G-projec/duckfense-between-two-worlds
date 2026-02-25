@@ -1,6 +1,12 @@
 // Ad Maiorem Dei Gloriam!
 drawCoilEffect();
 
+if (dimension = DIMENSIONS.GRAYWORLD) {
+	applyFilter(drawCoilEffect, shGrayscale);
+} else {
+	applyFilter(drawCoilEffect, shNormal);
+}
+
 if (invencible) {
 	shader_set(shDamage);
 	var _alpha = invencible_timer / invencible_time;
