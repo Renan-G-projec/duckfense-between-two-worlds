@@ -47,6 +47,7 @@
     {"id":{"name":"objDuck","path":"objects/objDuck/objDuck.yy",},},
     {"id":{"name":"objDuckParent","path":"objects/objDuckParent/objDuckParent.yy",},},
     {"id":{"name":"objEntityParent","path":"objects/objEntityParent/objEntityParent.yy",},},
+    {"id":{"name":"objShooterParent","path":"objects/objShooterParent/objShooterParent.yy",},},
     {"id":{"name":"rmTests","path":"rooms/rmTests/rmTests.yy",},},
     {"id":{"name":"scrCamera","path":"scripts/scrCamera/scrCamera.yy",},},
     {"id":{"name":"scrCoilEffect","path":"scripts/scrCoilEffect/scrCoilEffect.yy",},},

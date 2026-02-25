@@ -3,6 +3,7 @@ event_inherited();
 
 #region Variables
 
+dimension = 0;
 velocity = 0;
 
 healthPoints = 1;

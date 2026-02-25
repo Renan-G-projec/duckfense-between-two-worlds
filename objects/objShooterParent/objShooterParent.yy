@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objBulletAdversaryParent",
+  "%Name":"objShooterParent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objDuckParent","path":"objects/objDuckParent/objDuckParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objBulletAdversaryParent",
+  "name":"objShooterParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bullets",
-    "path":"folders/Objects/Bullets.yy",
+    "name":"Adversaries",
+    "path":"folders/Objects/Adversaries.yy",
   },
   "parentObjectId":{
-    "name":"objBulletParent",
-    "path":"objects/objBulletParent/objBulletParent.yy",
+    "name":"objAdversaryParent",
+    "path":"objects/objAdversaryParent/objAdversaryParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprFireBullet",
-    "path":"sprites/sprFireBullet/sprFireBullet.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
