@@ -1,4 +1,5 @@
 // Inherit the parent event
 event_inherited();
 
-updateTimerShoot();
+damage = 1;
+image_angle = direction;

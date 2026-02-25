@@ -1,6 +1,11 @@
 // Ad Maiorem Dei Gloriam!
 
-if (global.currentDimension != dimension) exit;
+
+if (global.currentDimension != dimension) {
+	updateTimers();
+	updateCoilEffect(dir);
+	exit;
+}
 
 updateInputs();
 updateVelocity();
@@ -9,6 +14,5 @@ updatePosition();
 updateSprite();
 
 updateDepth();
-
 updateTimers();
 updateCoilEffect(dir);

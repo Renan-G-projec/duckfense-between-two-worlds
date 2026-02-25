@@ -9,8 +9,8 @@
   "name":"objShooterParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Adversaries",
-    "path":"folders/Objects/Adversaries.yy",
+    "name":"Shooters",
+    "path":"folders/Objects/Adversaries/Shooters.yy",
   },
   "parentObjectId":{
     "name":"objAdversaryParent",
