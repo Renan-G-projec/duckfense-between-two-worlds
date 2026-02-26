@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objDuck",
+  "%Name":"objFarm",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objDuck",
+  "name":"objFarm",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Buildings",
+    "path":"folders/Objects/World/Buildings.yy",
   },
-  "parentObjectId":{
-    "name":"objDuckParent",
-    "path":"objects/objDuckParent/objDuckParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlayerIdle",
-    "path":"sprites/sprPlayerIdle/sprPlayerIdle.yy",
+    "name":"sprFarmDay",
+    "path":"sprites/sprFarmDay/sprFarmDay.yy",
   },
-  "spriteMaskId":{
-    "name":"sprPlayerIdle",
-    "path":"sprites/sprPlayerIdle/sprPlayerIdle.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

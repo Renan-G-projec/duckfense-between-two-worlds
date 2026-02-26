@@ -40,9 +40,3 @@ focusDimension = function(_dimension) {
 };
 
 #endregion
-
-#region Initial Config
-
-focusDimension(global.currentDimension);
-
-#endregion

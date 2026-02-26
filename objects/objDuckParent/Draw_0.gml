@@ -1,5 +1,4 @@
 // Ad Maiorem Dei Gloriam!
-drawCoilEffect();
 
 if (dimension == DIMENSIONS.GRAYWORLD) {
 	applyFilter(drawCoilEffect, shGrayscale);

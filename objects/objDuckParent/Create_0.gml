@@ -30,7 +30,7 @@ inputs = {
 
 state = STATE.IDLE;
 
-collisionList = [objCollision];
+collisionList = [objCollision, objCollisionWater];
 
 invencible = false;
 invencible_time = FPS * 0.2;
@@ -54,51 +54,9 @@ updateVelocity = function() {
 	velocity.yVel = (inputs.down - inputs.up) * MAX_VEL;
 };
 
-updateCollisions = function() {
-	// Checking Collisions
-	var _colX = instance_place(x + velocity.xVel, y, collisionList);
-	var _colY = instance_place(x, y + velocity.yVel, collisionList);
-	
-	// HORIZONTAL COLLISION
-	if (_colX) {
-		
-		// RIGHT
-		if (velocity.xVel > 0) {
-			x = _colX.bbox_left - (bbox_right - x);
-		}
-		
-		// LEFT
-		if (velocity.xVel < 0) {
-			x = _colX.bbox_right + (x - bbox_left);
-		}
-		
-		// We need to reset the velocity
-		velocity.xVel = 0;
-
-	}
-	
-	// VERTICAL COLLISION
-	if (_colY) {
-	
-		// DOWN
-		if (velocity.yVel > 0) {
-			y = _colY.bbox_top - (bbox_bottom - y);
-		}
-		
-		// UP
-		if (velocity.yVel < 0) {
-			y = _colY.bbox_bottom + (y - bbox_top);
-		}
-		
-		// We need to reset the velocity
-		velocity.yVel = 0;
-		
-	}
-};
-
 updatePosition = function() {
-	x += velocity.xVel;
-	y += velocity.yVel;
+	move_and_collide(velocity.xVel, 0, collisionList, 14);
+	move_and_collide(0, velocity.yVel, collisionList, 14);
 };
 
 updateState = function() {

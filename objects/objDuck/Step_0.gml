@@ -11,7 +11,6 @@ if (global.currentDimension != dimension) {
 
 updateInputs();
 updateVelocity();
-updateCollisions();
 updatePosition();
 updateState();
 updateSpriteDir();
