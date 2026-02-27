@@ -64,6 +64,8 @@
     {"id":{"name":"objEntityParent","path":"objects/objEntityParent/objEntityParent.yy",},},
     {"id":{"name":"objFarm","path":"objects/objFarm/objFarm.yy",},},
     {"id":{"name":"objGunFlamethrower","path":"objects/objGunFlamethrower/objGunFlamethrower.yy",},},
+    {"id":{"name":"objGunFlamethrowerGrd","path":"objects/objGunFlamethrowerGrd/objGunFlamethrowerGrd.yy",},},
+    {"id":{"name":"objGunOnGround","path":"objects/objGunOnGround/objGunOnGround.yy",},},
     {"id":{"name":"objGunParent","path":"objects/objGunParent/objGunParent.yy",},},
     {"id":{"name":"objShooterParent","path":"objects/objShooterParent/objShooterParent.yy",},},
     {"id":{"name":"rmTests","path":"rooms/rmTests/rmTests.yy",},},

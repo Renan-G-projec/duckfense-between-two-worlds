@@ -140,6 +140,7 @@ die = function() {
 };
 
 respawn = function() {
+	healthPoints = 10;
 	x = global.respawnX;
 	y = global.respawnY;
 }

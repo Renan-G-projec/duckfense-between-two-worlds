@@ -4,8 +4,8 @@ event_inherited();
 #region Flamethrower status
 
 distanceBullet = 36;
-playerRef = instance_nearest(x, y, objDuck);
-playerRef.gun = self;
+playerRef = noone;
+onGrndRef = objGunFlamethrowerGrd;
 bullet = objBulletFlame;
 
 diffuse = 20;

@@ -3,6 +3,7 @@
 #region Variables
 
 playerRef = noone;
+onGrndRef = noone;
 bullet = noone;
 dimension = 0;
 maxAmmo = 1;
