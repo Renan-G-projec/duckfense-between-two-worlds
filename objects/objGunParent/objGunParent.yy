@@ -9,10 +9,13 @@
   "name":"objGunParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Guns",
-    "path":"folders/Objects/Guns.yy",
+    "name":"InPlayer",
+    "path":"folders/Objects/Guns/InPlayer.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objEntityParent",
+    "path":"objects/objEntityParent/objEntityParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

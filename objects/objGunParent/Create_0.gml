@@ -27,6 +27,10 @@ updatePosition = function() {
 	image_yscale = (image_angle <= 90 || image_angle >= 270) ? 1 : -1;
 };
 
+updateDepth = function() {
+	depth = -playerRef.y;
+};
+
 shoot = function() {
 	if (ammo > 0) {
 		var _x = x + lengthdir_x(distanceBullet, image_angle);

@@ -17,6 +17,9 @@ activeTimer = activeTime;
 minVelocity = 2;
 velMagnitude = 0.1;
 
+// An Array to make the bullet 'Remember' who was damaged. 
+memorizedAdversaries = [];
+
 #endregion
 
 #region Methods

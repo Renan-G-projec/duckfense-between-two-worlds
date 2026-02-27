@@ -17,6 +17,7 @@ damageTime = FPS * 0.4;
 damageTimer = damageTime;
 
 dir = 1;
+damageInTouch = 1;
 
 playerRef = getPlayerDimension(dimension);
 
@@ -47,7 +48,7 @@ takeDamage = function(_damage) {
 	inDamage = true;
 	// Reset the damage Timer
 	damageTimer = damageTime;
-	activateCoilEffect(self, damageDistX, damageDistY);
+	activateCoilEffect(self, damageDistX * dir, damageDistY);
 }
 
 updateDamageTimer = function() {

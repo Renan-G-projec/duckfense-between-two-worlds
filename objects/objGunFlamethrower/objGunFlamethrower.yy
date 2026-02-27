@@ -8,8 +8,8 @@
   "name":"objGunFlamethrower",
   "overriddenProperties":[],
   "parent":{
-    "name":"Guns",
-    "path":"folders/Objects/Guns.yy",
+    "name":"InPlayer",
+    "path":"folders/Objects/Guns/InPlayer.yy",
   },
   "parentObjectId":{
     "name":"objGunParent",
