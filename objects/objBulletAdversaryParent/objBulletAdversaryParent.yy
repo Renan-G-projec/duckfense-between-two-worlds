@@ -9,8 +9,8 @@
   "name":"objBulletAdversaryParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bullets",
-    "path":"folders/Objects/Bullets.yy",
+    "name":"Adversaries",
+    "path":"folders/Objects/Bullets/Adversaries.yy",
   },
   "parentObjectId":{
     "name":"objBulletParent",

@@ -18,4 +18,5 @@ updateSpriteIndex();
 
 updateDepth();
 updateTimers();
+checkGun();
 updateCoilEffect(dir);

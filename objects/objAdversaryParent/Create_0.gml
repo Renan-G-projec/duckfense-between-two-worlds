@@ -78,6 +78,10 @@ updateSpriteDirection = function() {
 	image_xscale = dir;
 };
 
+die = function() {
+	instance_destroy();
+}
+
 #endregion
 
 #region Initializing Things

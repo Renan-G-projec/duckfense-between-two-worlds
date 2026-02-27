@@ -38,6 +38,8 @@ invencible_timer = invencible_time;
 
 dir = 1;
 
+gun = noone;
+
 #endregion
 
 #region Methods
@@ -124,6 +126,11 @@ applyFilter = function(_drawFn, _filter) {
 	shader_set(_prevShader);
 };
 
+checkGun = function() {
+	if (gun && mouse_check_button(mb_left)) {
+		gun.shoot();
+	}
+};
 #endregion
 
 #region Initializing dependencies

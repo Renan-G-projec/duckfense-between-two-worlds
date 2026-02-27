@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"objBulletPlayerParent",
+  "%Name":"objGunFlamethrower",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objAdversaryParent","path":"objects/objAdversaryParent/objAdversaryParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objBulletPlayerParent",
+  "name":"objGunFlamethrower",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Bullets/Player.yy",
+    "name":"Guns",
+    "path":"folders/Objects/Guns.yy",
   },
   "parentObjectId":{
-    "name":"objBulletParent",
-    "path":"objects/objBulletParent/objBulletParent.yy",
+    "name":"objGunParent",
+    "path":"objects/objGunParent/objGunParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprFlamethrower",
+    "path":"sprites/sprFlamethrower/sprFlamethrower.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
