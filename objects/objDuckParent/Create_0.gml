@@ -85,6 +85,8 @@ takeDamage = function(_damage) {
 	if (invencible) return;
 	healthPoints -= _damage;
 	
+	if (healthPoints <= 0) die();
+	
 	invencible = true;
 };
 
@@ -131,6 +133,16 @@ checkGun = function() {
 		gun.shoot();
 	}
 };
+
+die = function() {
+	global.farmLifes--;
+	respawn();
+};
+
+respawn = function() {
+	x = global.respawnX;
+	y = global.respawnY;
+}
 #endregion
 
 #region Initializing dependencies

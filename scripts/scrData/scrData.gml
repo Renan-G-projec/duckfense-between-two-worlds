@@ -14,7 +14,9 @@ enum DIMENSIONS {
 }
 
 global.currentDimension = DIMENSIONS.OVERWORLD;
-
+global.farmLifes = 3;
+global.respawnX = 0;
+global.respawnY = 0;
 #endregion
 
 #region Configurations 
