@@ -17,9 +17,13 @@ damageTime = FPS * 0.4;
 damageTimer = damageTime;
 
 dir = 1;
-damageInTouch = 1;
 
-playerRef = getPlayerDimension(dimension);
+damageInTouch = 1;
+touch = false;
+touchTime = FPS * 2;
+touchTimer = touchTime;
+
+playerRef = 0;
 
 #endregion
 
@@ -61,6 +65,16 @@ updateDamageTimer = function() {
 	}
 }
 
+updateTouchTimer = function() {
+	if (!touch) return;
+	if (touchTimer > 0) {
+		touchTimer--;
+	} else {
+		touchTimer = touchTime;
+		touch = false;
+	}
+}
+
 updateDir = function() {
 	if (direction < 90 || direction > 270) {
 		dir = 1;
@@ -79,6 +93,14 @@ updateSpriteDirection = function() {
 	image_xscale = dir;
 };
 
+checkPlayerNear = function() {
+	if (touch) return;
+	if (place_meeting(x, y, playerRef)) {
+		playerRef.takeDamage(damageInTouch);
+		touch = true;
+	}
+};
+	
 die = function() {
 	instance_destroy();
 }
