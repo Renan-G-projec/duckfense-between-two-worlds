@@ -4,7 +4,7 @@
 
 currentIndex = 0;
 
-options = ["Jogar", "Tutorial", "Configurações", "Créditos"];
+options = ["[fntMenu]Jogar", "[fntMenu]Tutorial", "[fntMenu]Configurações", "[fntMenu]Créditos"];
 rooms = [rmTests]
 offsets = [0, 0, 0, 0]
 
@@ -22,7 +22,7 @@ pair = array_length(options) % 2 == 0;
 
 magOffset = 0.1;
 commonOffset = 40;
-colorSel = c_fuchsia;
+colorSel = c_lime;
 
 #endregion
 
@@ -41,19 +41,17 @@ updateIndex = function() {
 };
 
 drawOption = function() {
-	draw_set_font(fntMenu);
 	
 	for (i = 0; i < numOptions; i++) {
-		if (i == currentIndex) {
-			draw_set_colour(colorSel);
+		var current = i == currentIndex;
+		if (current) {
 			offsets[i] = commonOffset;
 		} else {
 			offsets[i] = lerp(offsets[i], 0, magOffset);
 		};
-		draw_text_ext_transformed(borderX + offsets[i], (screenMiddle - numOptions / 2 * distanceY)  + i * distanceY, options[i], 1, 1000, 1.4, 1.4, 0);
-		draw_set_colour(c_white);
+		
+		scribble((current ? "[wheel]" : "") + options[i] ).blend(current ? colorSel : c_white).draw(borderX + offsets[i], (screenMiddle - numOptions / 2 * distanceY)  + i * distanceY);
 	}
-	draw_set_font(-1);
 };
 
 checkClick = function() {
@@ -61,5 +59,11 @@ checkClick = function() {
 		room_goto(rooms[currentIndex]);
 	}
 };
+
+#endregion
+
+#region Initializing Things
+
+scribble_font_scale("fntMenu", 0.7);
 
 #endregion
