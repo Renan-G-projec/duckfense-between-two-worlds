@@ -56,4 +56,10 @@ drawOption = function() {
 	draw_set_font(-1);
 };
 
+checkClick = function() {
+	if (keyboard_check_pressed(vk_enter)) {
+		room_goto(rooms[currentIndex]);
+	}
+};
+
 #endregion

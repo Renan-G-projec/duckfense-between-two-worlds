@@ -10,6 +10,9 @@ healthPoints = 1;
 damageDistX = 1.4;
 damageDistY = 0.7;
 
+playerCoilX = 1.4;
+playerCoilY = 0.7;
+
 collisionList = [objCollision];
 
 inDamage = false;
@@ -96,6 +99,7 @@ updateSpriteDirection = function() {
 checkPlayerNear = function() {
 	if (touch) return;
 	if (place_meeting(x, y, playerRef)) {
+		activateCoilEffect(playerRef, playerCoilX * playerRef.dir, playerCoilY);
 		playerRef.takeDamage(damageInTouch);
 		touch = true;
 	}
@@ -104,6 +108,10 @@ checkPlayerNear = function() {
 die = function() {
 	instance_destroy();
 }
+
+updateDepth = function() {
+	depth = -y;
+};
 
 #endregion
 

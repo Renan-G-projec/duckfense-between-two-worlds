@@ -1,4 +1,4 @@
-// Inherit the parent event
+// Ad Maiorem Dei Gloriam!
 event_inherited();
 
 dimension = DIMENSIONS.OVERWORLD;

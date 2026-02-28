@@ -11,18 +11,18 @@ getOtherDimension = function(_dimension) {
 
 updateDimension = function() {
 	if (!keyboard_check_pressed(ord("E"))) return;
-	toggleDimension(global.currentDimension);
+	toggleDimension();
 	focusDimension(global.currentDimension);
 	changeCameraTarget(getPlayerDimension(getOtherDimension(global.currentDimension)), getPlayerDimension(global.currentDimension));
 };
 
-toggleDimension = function(_dimension) {
-	global.currentDimension = getOtherDimension(_dimension);
+toggleDimension = function() {
+	global.currentDimension = getOtherDimension(global.currentDimension);
 	toggleGrayFilter();
 }
 
 toggleGrayFilter = function() {
-	if (shader_current() != shGrayscale) {
+	if (global.currentDimension == DIMENSIONS.GRAYWORLD) {
 		shader_set(shGrayscale);
 	} else {
 		shader_set(shNormal);

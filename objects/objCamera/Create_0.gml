@@ -33,7 +33,7 @@ checkTargetDistance = function() {
 
 deactivate = function() {
 	camera_set_view_target(view_camera[0], target);
-	camera_set_view_border(view_camera[0], 64, 64);
+	camera_set_view_border(view_camera[0], 80, 80);
 	active = false;
 }
 

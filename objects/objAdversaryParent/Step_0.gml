@@ -2,6 +2,7 @@
 
 pointToPlayer();
 updatePosition();
+updateDepth();
 updateDamageTimer();
 updateTouchTimer();
 checkPlayerNear();

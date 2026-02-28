@@ -12,7 +12,7 @@ movState = MovementState.FAST;
 
 dimension = DIMENSIONS.GRAYWORLD;
 damageInTouch = 2;
-damageTime = FPS * 0.8;
+damageTime = FPS * 0.4;
 playerRef = getPlayerDimension(dimension);
 
 collisionList = [objCollision, objCollisionWater];
