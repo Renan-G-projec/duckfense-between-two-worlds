@@ -15,6 +15,8 @@ damageInTouch = 2;
 damageTime = FPS * 0.8;
 playerRef = getPlayerDimension(dimension);
 
+collisionList = [objCollision, objCollisionWater];
+
 // To create a special movement effect
 enum MovementState {
 	FAST,

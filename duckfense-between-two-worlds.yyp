@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Adversaries","folderPath":"folders/Objects/Adversaries.yy","name":"Adversaries","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Body","folderPath":"folders/Objects/Adversaries/Body.yy","name":"Body","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -20,6 +21,7 @@
     {"$GMFolder":"","%Name":"Guns","folderPath":"folders/Objects/Guns.yy","name":"Guns","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"InPlayer","folderPath":"folders/Objects/Guns/InPlayer.yy","name":"InPlayer","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"OnGround","folderPath":"folders/Objects/Guns/OnGround.yy","name":"OnGround","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objects/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"World","folderPath":"folders/Objects/World.yy","name":"World","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Buildings","folderPath":"folders/Objects/World/Buildings.yy","name":"Buildings","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -47,6 +49,7 @@
   },
   "name":"duckfense-between-two-worlds",
   "resources":[
+    {"id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},},
     {"id":{"name":"objAdBee","path":"objects/objAdBee/objAdBee.yy",},},
     {"id":{"name":"objAdSlime","path":"objects/objAdSlime/objAdSlime.yy",},},
     {"id":{"name":"objAdversaryParent","path":"objects/objAdversaryParent/objAdversaryParent.yy",},},
@@ -67,7 +70,9 @@
     {"id":{"name":"objGunFlamethrowerGrd","path":"objects/objGunFlamethrowerGrd/objGunFlamethrowerGrd.yy",},},
     {"id":{"name":"objGunOnGround","path":"objects/objGunOnGround/objGunOnGround.yy",},},
     {"id":{"name":"objGunParent","path":"objects/objGunParent/objGunParent.yy",},},
+    {"id":{"name":"objMenu","path":"objects/objMenu/objMenu.yy",},},
     {"id":{"name":"objShooterParent","path":"objects/objShooterParent/objShooterParent.yy",},},
+    {"id":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"id":{"name":"rmTests","path":"rooms/rmTests/rmTests.yy",},},
     {"id":{"name":"scrCamera","path":"scripts/scrCamera/scrCamera.yy",},},
     {"id":{"name":"scrCoilEffect","path":"scripts/scrCoilEffect/scrCoilEffect.yy",},},
@@ -97,6 +102,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmTests","path":"rooms/rmTests/rmTests.yy",},},
+    {"roomId":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
