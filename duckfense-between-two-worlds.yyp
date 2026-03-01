@@ -242,6 +242,7 @@
     {"id":{"name":"shDamage","path":"shaders/shDamage/shDamage.yy",},},
     {"id":{"name":"shGrayscale","path":"shaders/shGrayscale/shGrayscale.yy",},},
     {"id":{"name":"shNormal","path":"shaders/shNormal/shNormal.yy",},},
+    {"id":{"name":"snd_boomerang","path":"sounds/snd_boomerang/snd_boomerang.yy",},},
     {"id":{"name":"snd_flamethrowerloop","path":"sounds/snd_flamethrowerloop/snd_flamethrowerloop.yy",},},
     {"id":{"name":"snd_grayworld","path":"sounds/snd_grayworld/snd_grayworld.yy",},},
     {"id":{"name":"snd_overworld","path":"sounds/snd_overworld/snd_overworld.yy",},},

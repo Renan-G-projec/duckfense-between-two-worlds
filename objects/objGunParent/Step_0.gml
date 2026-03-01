@@ -23,3 +23,4 @@ if (global.currentDimension == DIMENSIONS.OVERWORLD){
 	    }
 	}
 }
+

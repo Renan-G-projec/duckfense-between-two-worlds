@@ -57,4 +57,6 @@ updateToPlayer = function() {
 };
 		
 
+		audio_play_sound(snd_boomerang, 1, false);
+
 #endregion
