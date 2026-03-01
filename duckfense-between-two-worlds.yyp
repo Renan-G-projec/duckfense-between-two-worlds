@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Adversaries","folderPath":"folders/Objects/Adversaries.yy","name":"Adversaries","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Body","folderPath":"folders/Objects/Adversaries/Body.yy","name":"Body","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -240,6 +241,7 @@
     {"id":{"name":"shDamage","path":"shaders/shDamage/shDamage.yy",},},
     {"id":{"name":"shGrayscale","path":"shaders/shGrayscale/shGrayscale.yy",},},
     {"id":{"name":"shNormal","path":"shaders/shNormal/shNormal.yy",},},
+    {"id":{"name":"snd_flamethrowerloop","path":"sounds/snd_flamethrowerloop/snd_flamethrowerloop.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"sprBackgroundTest","path":"sprites/sprBackgroundTest/sprBackgroundTest.yy",},},
     {"id":{"name":"sprBee","path":"sprites/sprBee/sprBee.yy",},},

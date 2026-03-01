@@ -22,6 +22,7 @@ shoot = function() {
 		var _bullet = instance_create_layer(_x, _y, "Bullets", bullet);
 		_bullet.direction = image_angle + irandom_range(-diffuse, diffuse);
 		_bullet.dimension = playerRef.dimension;
+		
 	}
 }
 

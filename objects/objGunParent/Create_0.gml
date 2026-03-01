@@ -11,6 +11,7 @@ ammo = 1;
 recharging = false;
 rechargingTime = FPS * 1;
 rechargingTimer = rechargingTime;
+flame_sound = -1;
 
 distanceBullet = 0;
 

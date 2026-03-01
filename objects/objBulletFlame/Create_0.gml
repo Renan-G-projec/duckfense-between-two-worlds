@@ -33,6 +33,7 @@ updateTimer = function() {
 	};
 }
 
+
 updateAlpha = function() {
 	if (active) return;
 	
