@@ -2,13 +2,17 @@
 
 global.currentWave = 0;
 
-global.adversariesCount = 2;
+global.adversariesCount = 1;
 
 global.adversariesList = [objAdBee, objAdSlime]
 
 function updateWave() {
 	global.currentWave++;
 	global.adversariesCount += log2(global.currentWave);
+	
+	with (objAdSpawn) {
+		adversariesCount = floor(1 + random_range(1, 2) * global.adversariesCount);
+	}
 }
 
 function updateAdversariesCount() {
@@ -16,5 +20,5 @@ function updateAdversariesCount() {
 }
 
 function checkUpdateWave() {
-	if (instance_number(objAdversaryParent) <= 0) updateWave();
+	if (instance_number(objAdversaryParent) <= 1) updateWave();
 }

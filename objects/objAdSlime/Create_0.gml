@@ -17,7 +17,8 @@ playerRef = getPlayerDimension(dimension);
 
 collisionList = [objCollision, objCollisionWater];
 
-// To create a special movement effect
+pontuationGive = 12;
+
 enum MovementState {
 	FAST,
 	SLOW

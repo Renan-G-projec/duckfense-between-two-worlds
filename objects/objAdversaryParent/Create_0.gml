@@ -6,6 +6,8 @@ event_inherited();
 dimension = 0;
 velocity = 0;
 
+pontuationGiven = 0;
+
 healthPoints = 1;
 damageDistX = 1.4;
 damageDistY = 0.7;

@@ -11,8 +11,8 @@ dimension = DIMENSIONS.GRAYWORLD;
 
 #region Variables
 
-returnMag = 0.04;
-velMag = 10;
+returnMag = 0.07;
+velMag = 4;
 dimension = DIMENSIONS.GRAYWORLD;
 
 returning = false;
@@ -28,7 +28,7 @@ playerRef = getPlayerDimension(dimension);
 #region Methods
 
 updateVelocity = function() {
-	speed = lerp(speed, -4, returnMag);
+	speed = lerp(speed, -velMag * 2.4, returnMag);
 };
 
 updateTimers = function() {

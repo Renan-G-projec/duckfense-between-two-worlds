@@ -8,4 +8,6 @@ bullet = objBulletSpike;
 healthPoints = 2;
 playerRef = getPlayerDimension(dimension);
 
+pontuationGiven = 10;
+
 #endregion

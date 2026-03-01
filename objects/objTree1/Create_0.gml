@@ -1,3 +1,3 @@
 // Ad Maiorem Dei Gloriam!
 
-drawStats();
+depth = -y;

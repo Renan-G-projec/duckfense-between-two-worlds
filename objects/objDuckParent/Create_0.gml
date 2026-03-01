@@ -136,6 +136,7 @@ checkGun = function() {
 
 die = function() {
 	global.farmLifes--;
+	objFarm.updateSprite();
 	respawn();
 };
 
