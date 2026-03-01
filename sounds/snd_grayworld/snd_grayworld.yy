@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_flamethrowerloop",
+  "%Name":"snd_grayworld",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":5.8269615,
+  "duration":52.541336,
   "exportDir":"",
-  "name":"snd_flamethrowerloop",
+  "name":"snd_grayworld",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_flamethrowerloop.ogg",
-  "volume":1.0,
+  "soundFile":"snd_grayworld.ogg",
+  "volume":0.7,
 }
