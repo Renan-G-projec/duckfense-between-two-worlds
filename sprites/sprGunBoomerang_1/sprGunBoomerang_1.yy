@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"sprGunBoomerang_1",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":15,
-  "bbox_left":1,
-  "bbox_right":12,
+  "bbox_left":-16,
+  "bbox_right":15,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
