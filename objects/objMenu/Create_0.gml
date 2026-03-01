@@ -4,9 +4,9 @@
 
 currentIndex = 0;
 
-options = ["[fntMenu]Jogar", "[fntMenu]Tutorial", "[fntMenu]Configurações", "[fntMenu]Créditos"];
-rooms = [rmTests]
-offsets = [0, 0, 0, 0]
+options = ["[fntMenu]Jogar", "[fntMenu]Créditos", "[fntMenu]Sair"];
+rooms = [rmTests, rmCredits]
+offsets = [0, 0, 0]
 
 numOptions = array_length(options);
 
@@ -56,6 +56,10 @@ drawOption = function() {
 
 checkClick = function() {
 	if (keyboard_check_pressed(vk_enter)) {
+		if (currentIndex == 2) { 
+			game_end();
+			return;
+		}
 		room_goto(rooms[currentIndex]);
 	}
 };

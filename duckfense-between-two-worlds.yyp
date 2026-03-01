@@ -85,6 +85,7 @@
     {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},},
     {"id":{"name":"objCollisionWater","path":"objects/objCollisionWater/objCollisionWater.yy",},},
+    {"id":{"name":"objCredits","path":"objects/objCredits/objCredits.yy",},},
     {"id":{"name":"objDimensionController","path":"objects/objDimensionController/objDimensionController.yy",},},
     {"id":{"name":"objDuck","path":"objects/objDuck/objDuck.yy",},},
     {"id":{"name":"objDuckParent","path":"objects/objDuckParent/objDuckParent.yy",},},
@@ -102,6 +103,7 @@
     {"id":{"name":"objScorpion","path":"objects/objScorpion/objScorpion.yy",},},
     {"id":{"name":"objShooterParent","path":"objects/objShooterParent/objShooterParent.yy",},},
     {"id":{"name":"objTree1","path":"objects/objTree1/objTree1.yy",},},
+    {"id":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
     {"id":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"id":{"name":"rmTests","path":"rooms/rmTests/rmTests.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
@@ -269,6 +271,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"roomId":{"name":"rmTests","path":"rooms/rmTests/rmTests.yy",},},
+    {"roomId":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
