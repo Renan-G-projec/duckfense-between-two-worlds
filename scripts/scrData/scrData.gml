@@ -20,6 +20,8 @@ global.respawnY = 0;
 
 global.pontuation = 0;
 
+global.fontSetted = false;
+
 #endregion
 
 #region Configurations 

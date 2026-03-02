@@ -13,9 +13,7 @@ numOptions = array_length(options);
 borderX = 70;
 maxBorderX = 48;
 
-distanceY = 80;
-
-font_height = 20;
+distanceY = 100;
 
 screenMiddle = display_get_gui_height() / 2;
 pair = array_length(options) % 2 == 0;
@@ -68,6 +66,9 @@ checkClick = function() {
 
 #region Initializing Things
 
-scribble_font_scale("fntMenu", 0.7);
+if (!global.fontSetted) {
+	scribble_font_scale("fntMenu", 0.7);
+	global.fontSetted = true;
+};
 
 #endregion
